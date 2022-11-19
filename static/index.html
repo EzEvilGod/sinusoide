@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinusoide</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: max-content;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        #myForm{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #myForm div{
+            padding:0 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formWrapper">
+        <form id="myForm">
+            <div>
+                <h3>AMPIEZZA</h3>
+                <input type="range" id="ampiezza" min="10" max="200" step="10" value="100">
+            </div>
+            <div>
+                <h3>FREQUENZA</h3>
+                <input type="range" id="frequenza" min="1" max="4" step="0.5" value="2">
+            </div>
+            <div>
+                <h3>FASE</h3>
+                  <input type="range" id="fase" min="0" max="2" step="0.1" value="0">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./js/p5/p5.js"></script>
+    <script src="./js/p5/p5.min.js"></script>
+    <script src="./js/p5/sketch.js"></script>
+    <script src="./js/style.js"></script>
+</body>
+</html>
